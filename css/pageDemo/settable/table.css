@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+    padding: 20px;
+}
+
+.sidebar-item {
+    width: 200px; /* 设置固定宽度 */
+    background-color: #00fd8b;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: aliceblue;
+}
+
+#cart-container {
+    position: fixed;
+    bottom: 0;
+    left: 0px;
+    width: 200px; /* 固定购物车宽度 */
+    max-height: calc(50vh - 20px); /* 限制购物车高度 */
+    overflow-y: auto; /* 添加滚动条 */
+    border-top: 1px solid #ddd;
+    padding: 10px 20px;
+    z-index: 1; /* 确保购物车在其他元素之上 */
+    color: aliceblue;
+}
+#sidebar {
+    flex: 1;
+    padding-right: 20px;
+}
+.sidebar-container {
+    width: 400px; /* 设置整个设定桌号模块的宽度 */
+
+}
+#content {
+    flex: 2;
+}
+
+h1 {
+    text-align: center;
+}
+
+#table-selection {
+    margin-bottom: 20px;
+}
+
+#table-number {
+    padding: 10px;
+    font-size: 18px;
+    width: 100%;
+}
+
+#menu, #cart {
+    margin-bottom: 20px;
+}
+.menu-item input[type="text"] {
+    flex: 1; /* 占据剩余空间 */
+    margin-left: 20px; /* 调整文本框与其他元素的间距 */
+    width: 100%; /* 设置文本框宽度为父元素的宽度 */
+    max-width: 800px; /* 设置文本框的最大宽度，根据需要调整 */
+    height: 100px; /* 设置文本框的高度，根据需要调整 */
+    border: none; /* 取消文本框的外边框 */
+
+}
+.menu-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.menu-item img {
+    max-width: 150px;
+    height: auto;
+}
+
+.add-to-cart {
+    background-color: #00ffff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#cart-items {
+    list-style: none;
+    padding: 0;
+}
+
+.remove-item {
+    cursor: pointer;
+    color: red;
+}
+
+#cart-items li {
+    margin-bottom: 5px;
+}
+
+#checkout {
+    background-color: #00ffff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#cart-total {
+    font-weight: bold;
+}
